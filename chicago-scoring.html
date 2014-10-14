@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>-->
+	<script language="javascript">
+
+	</script>
+	<style>
+        html, body{width:100%;height:100%;margin:0;}
+        #scoreboard{width:96%;margin:2%;height:60%;float:left;content: editable;}
+        #title{width: 100%;text-align: center;}
+        .score{width:48%;height:100%;color:black;font-size:100px;text-align: center;vertical-align: middle;line-height:160%;overflow-x:hidden; border:1px solid black;}
+        .score-one{float:left;}
+        .score-two{float:right;}
+        .name{width:48%;height:100%;color:black;font-size:24px;text-align:center;vertical-align: middle;line-height: 160%;overflow-x: hidden;border:1px solid black;content: editable;}
+        .name-one{float:left;}
+        .name-two{float:right;}
+        #names{width:96%;margin-left:2%; margin-right:2%; height:8%;float:left;}
+	</style>
+	<title>Chicago.</title>
+</head>
+<body>
+    <div id="scoreboard">
+      <div id="title">
+       CHICAGO
+       </div>
+        <div class="score score-one" contenteditable>
+            0
+        </div>
+        <div class="score score-two" contenteditable>
+            0
+        </div>
+    </div>
+    <div id="names">
+        <div class="name name-one" contenteditable>
+            [Player one]
+        </div>
+        <div class="name name-two" contenteditable>
+            [Player two]
+        </div>
+    </div>
+</body>
+</html>
