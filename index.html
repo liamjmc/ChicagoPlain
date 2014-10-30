@@ -1,44 +1,51 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>-->
-	<script language="javascript">
 
-	</script>
-	<style>
-        html, body{width:100%;height:100%;margin:0;}
-        #scoreboard{width:96%;margin:2%;height:60%;float:left;content: editable;}
-        #title{width: 100%;text-align: center;}
-        .score{width:48%;height:100%;color:black;font-size:100px;text-align: center;vertical-align: middle;line-height:160%;overflow-x:hidden; border:1px solid black;}
-        .score-one{float:left;}
-        .score-two{float:right;}
-        .name{width:48%;height:100%;color:black;font-size:24px;text-align:center;vertical-align: middle;line-height: 160%;overflow-x: hidden;border:1px solid black;content: editable;}
-        .name-one{float:left;}
-        .name-two{float:right;}
-        #names{width:96%;margin-left:2%; margin-right:2%; height:8%;float:left;}
-	</style>
-	<title>Chicago.</title>
+<head>
+<link href="main.css" rel="stylesheet">
+<script src="jquery-2.1.1.min.js"></script>
+<script src="main.js"></script>
+
 </head>
+
 <body>
-    <div id="scoreboard">
-      <div id="title">
-       CHICAGO
-       </div>
-        <div class="score score-one" contenteditable>
-            0
-        </div>
-        <div class="score score-two" contenteditable>
-            0
-        </div>
-    </div>
-    <div id="names">
-        <div class="name name-one" contenteditable>
-            [Player one]
-        </div>
-        <div class="name name-two" contenteditable>
-            [Player two]
-        </div>
-    </div>
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<div tabindex="1" class="screen screen-right"></div>
+		<div tabindex="1" class="screen screen-left"></div>
+		
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span class="ball-nine black stripe">9</span>
+		<span class="ball-ten black stripe">10</span>
+		<span class="ball-eleven black stripe">11</span>
+		<span class="ball-twelve black stripe">12</span>
+		<span class="ball-thirteen black stripe">13</span>
+		<span class="ball-fourteen black stripe">14</span>
+		<span class="ball-fifteen black stripe">15</span>
+		
+		<span class="ball-two">2</span>
+		<span class="ball-three">3</span>
+		<span class="ball-four">4</span>
+		<span class="ball-five">5</span>
+		<span class="ball-six">6</span>
+		<span class="ball-seven">7</span>
+		<span class="ball-eight">8</span>
+		
+		<span class="ball-one black">1</span>
+		<span class="ball-clear">C</span>
+		<span class="ball-plus">+</span>
+		<span class="ball-minus">-</span>
+		<span class="ball-equals">=</span>
+		
+		
+	</div>
+</div>
+
 </body>
+
+
 </html>
