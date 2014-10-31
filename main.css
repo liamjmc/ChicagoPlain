@@ -38,7 +38,7 @@ html {
 /* Inset shadow on the screen to create indent */
 .top .screen {
 height: 80px;
-width: 44%;
+width: 26%;
 float: right;
 font-size: 30px;
 line-height: 80px;
@@ -46,6 +46,8 @@ color: white;
 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 text-align: center;
 letter-spacing: 1px;
+    position:relative;
+    z-index:1000;
 }
 
 /* Clear floats */
@@ -258,8 +260,8 @@ left: 49vw;
 #title{
  font-family: 'Lobster', cursive;   
     position: absolute;
-    width:20%;
-    left: 20%;
+    width:100%;
+    left: 0;
 text-align: center;
 font-size: 50px;
 top: 7vh;
