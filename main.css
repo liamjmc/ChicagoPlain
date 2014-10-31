@@ -211,50 +211,50 @@ bottom: 5px;
 
 .pocket{
      position: absolute;
-    height: 6vh;
-width: 6vh;
+    height: 8vh;
+width: 8vh;
     background: transparent;
     border-radius: 50%;
 }
 
 .left-top-pocket{
-top: 2vh;
-left: 2vh;
-border-left: black solid 3vh;
-border-top: black solid 3vh;
+top: 1vh;
+left: 1vh;
+border-left: black solid 4vh;
+border-top: black solid 4vh;
 }
 
 .left-bottom-pocket{
-bottom: 2vh;
-left: 2vh;
-border-left: black solid 3vh;
-border-bottom: black solid 3vh;
+bottom: 1vh;
+left: 1vh;
+border-left: black solid 4vh;
+border-bottom: black solid 4vh;
 }
 
 .right-top-pocket{
-top: 2vh;
-right: 2vh;
-border-right: black solid 3vh;
-border-top: black solid 3vh;
+top: 1vh;
+right: 1vh;
+border-right: black solid 4vh;
+border-top: black solid 4vh;
 }
 
 .right-bottom-pocket{
-bottom: 2vh;
-right: 2vh;
-border-right: black solid 3vh;
-border-bottom: black solid 3vh; 
+bottom: 1vh;
+right: 1vh;
+border-right: black solid 4vh;
+border-bottom: black solid 4vh; 
 }
 
 .middle-top-pocket {
-border-top: solid black 3vh;
-top: 2vh;
+border-top: solid black 4vh;
+top: 1vh;
 width: 5vw;
 left: 47.5vw;
 }
 
 .middle-bottom-pocket {
-border-bottom: solid black 3vh;
-bottom: 2vh;
+border-bottom: solid black 4vh;
+bottom: 1vh;
 width: 5vw;
     left: 47.5vw;
 }
@@ -267,4 +267,14 @@ width: 5vw;
 text-align: center;
 font-size: 50px;
 top: 7vh;
+}
+
+#white {
+height: 8vh;
+width: 8vh;
+position: absolute;
+bottom: 12vh;
+left: 56vw;
+border-radius: 50%;
+background: white;
 }
