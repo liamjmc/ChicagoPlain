@@ -22,12 +22,15 @@ html {
 /* Using box shadows to create 3D effects */
 #calculator {
 	width: 100vw;
-	height: 100vh;
-	margin: 0 auto;
-	padding: 20px 20px 9px;
-	background: linear-gradient(#3AA845, #023D08);
-	border: 5vh brown solid;
-    /*border-radius: 4vh;*/
+height: 100vh;
+margin: 0 auto;
+padding: 20px 20px 9px;
+/* background: linear-gradient(#3AA845, #023D08); */
+/* border: 5vh transparent solid; */
+/* border-radius: 4vh; */
+background-image: url('table.png');
+background-size: 100% 100%;
+padding: 10vh;
 }
 
 /* Top portion */
@@ -266,7 +269,8 @@ width: 5vw;
     left: 0;
 text-align: center;
 font-size: 50px;
-top: 7vh;
+top: 10vh;
+    color: #FFBDF8;
 }
 
 #white {
@@ -277,4 +281,23 @@ bottom: 12vh;
 left: 56vw;
 border-radius: 50%;
 background: white;
+}
+
+#chalk{
+    background: rgb(39, 157, 255);
+height: 2vh;
+width: 2vh;
+position: absolute;
+top: 1vw;
+left: 23vw;
+}
+
+#chalk::before{
+ position: absolute;
+    top:1px;
+    bottom:1px;
+    left:1px;
+    right:1px;
+    border-radius:50%;
+    border:blue solid 1px;
 }
