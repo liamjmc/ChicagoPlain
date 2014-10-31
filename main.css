@@ -38,7 +38,7 @@ html {
 /* Inset shadow on the screen to create indent */
 .top .screen {
 height: 80px;
-width: 47%;
+width: 44%;
 float: right;
 font-size: 30px;
 line-height: 80px;
@@ -258,8 +258,8 @@ left: 49vw;
 #title{
  font-family: 'Lobster', cursive;   
     position: absolute;
-    width:100%;
-    left: 0;
+    width:20%;
+    left: 20%;
 text-align: center;
 font-size: 50px;
 top: 7vh;
