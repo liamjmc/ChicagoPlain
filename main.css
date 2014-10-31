@@ -165,7 +165,7 @@ height: 30%;
 }
 
 .keys span.stripe{
- line-height:5;   
+ line-height:4;   
 }
 
 .keys span.ball-nine{border-top: yellow solid 6vh;border-bottom: yellow solid 6vh;}
@@ -253,4 +253,14 @@ left: 49vw;
 border-bottom: solid black 3vh;
 bottom: 2vh;
 left: 49vw;
+}
+
+#title{
+ font-family: 'Lobster', cursive;   
+    position: absolute;
+    width:100%;
+    left: 0;
+text-align: center;
+font-size: 50px;
+top: 7vh;
 }
