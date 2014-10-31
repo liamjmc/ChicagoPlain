@@ -27,7 +27,7 @@ html {
 	padding: 20px 20px 9px;
 	background: linear-gradient(#3AA845, #023D08);
 	border: 5vh brown solid;
-    border-radius: 4vh;
+    /*border-radius: 4vh;*/
 }
 
 /* Top portion */
@@ -63,12 +63,12 @@ letter-spacing: 1px;
 height: 30%;
 	
 	background: white;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	
 	margin: 0 14.5px 11px 0;
 	
 	color: #888;
-	line-height: 117px;
+	line-height: 90px;
 	text-align: center;
 	
 	/* prevent selection of text inside keys */
@@ -168,13 +168,13 @@ height: 30%;
  line-height:7;   
 }
 
-.keys span.ball-nine{border-top: yellow solid 15px;border-bottom: yellow solid 15px;}
-.keys span.ball-ten{border-top: blue solid 15px;border-bottom: blue solid 15px;}
-.keys span.ball-eleven{border-top: red solid 15px;border-bottom: red solid 15px;}
-.keys span.ball-twelve{border-top: purple solid 15px;border-bottom: purple solid 15px;}
-.keys span.ball-thirteen{border-top: orange solid 15px;border-bottom: orange solid 15px;}
-.keys span.ball-fourteen{border-top: green solid 15px;border-bottom: green solid 15px;}
-.keys span.ball-fifteen{border-top: maroon solid 15px;border-bottom: maroon solid 15px;}
+.keys span.ball-nine{border-top: yellow solid 6vh;border-bottom: yellow solid 6vh;}
+.keys span.ball-ten{border-top: blue solid 6vh;border-bottom: blue solid 6vh;}
+.keys span.ball-eleven{border-top: red solid 6vh;border-bottom: red solid 6vh;}
+.keys span.ball-twelve{border-top: purple solid 6vh;border-bottom: purple solid 6vh;}
+.keys span.ball-thirteen{border-top: orange solid 6vh;border-bottom: orange solid 6vh;}
+.keys span.ball-fourteen{border-top: green solid 6vh;border-bottom: green solid 6vh;}
+.keys span.ball-fifteen{border-top: maroon solid 6vh;border-bottom: maroon solid 6vh;}
 
 .screen:focus{
  border:blue 4px solid;   
@@ -212,7 +212,7 @@ bottom: 5px;
     height: 6vh;
 width: 6vh;
     background: transparent;
-    border-radius: 3vh;
+    /*border-radius: 3vh;*/
 }
 
 .left-top-pocket{
