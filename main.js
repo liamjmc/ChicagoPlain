@@ -70,6 +70,8 @@ for(var i = 0; i < keys.length; i++) {
                     otherInput = document.querySelector('.screen-right');
                     var equation = inputVal + "-" + btnVal;
                     input.innerHTML = eval(equation);
+                    if (parseInt(input.innerHTML) < 61)
+                        document.querySelector('#title').innerHTML = "Chicago";
                 }
                 else{
                     this.classList.remove("selected-right");
@@ -77,6 +79,8 @@ for(var i = 0; i < keys.length; i++) {
                     otherInput = document.querySelector('.screen-left');
                     var equation = inputVal + "-" + btnVal;
                     input.innerHTML = eval(equation);
+                    if (parseInt(input.innerHTML) < 61)
+                        document.querySelector('#title').innerHTML = "Chicago";
                 }
             }
 		}
