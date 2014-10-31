@@ -67,8 +67,8 @@ width: 47%;
 	
 	cursor: pointer;
 	
-	width: 13%;
-height: 26%;
+	width: 15%;
+height: 30%;
 	
 	background: white;
 	border-radius: 50%;
@@ -77,7 +77,7 @@ height: 26%;
 	margin: 0 7px 11px 0;
 	
 	color: #888;
-	line-height: 66px;
+	line-height: 128px;
 	text-align: center;
 	
 	/* prevent selection of text inside keys */
@@ -174,7 +174,7 @@ height: 26%;
 }
 
 .keys span.stripe{
- line-height:37px;   
+ line-height:7;   
 }
 
 .keys span.ball-nine{border-top: yellow solid 15px;border-bottom: yellow solid 15px;}
