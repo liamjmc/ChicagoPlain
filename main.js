@@ -11,12 +11,16 @@ $(".screen-left").click(function(){
  input = this;  
  team = "left";
  otherInput = document.querySelector('.screen-right');
+ input.classList.add("selected-screen");
+ otherInput.classList.remove("selected-screen");
 });
                         
-$(".screen-right").click(function(){
- input = this;   
+$(".screen-right").click(function(){   
+ input = this;  
  team = "right";
  otherInput = document.querySelector('.screen-left');
+ input.classList.add("selected-screen");
+ otherInput.classList.remove("selected-screen");
 });
     
 for(var i = 0; i < keys.length; i++) {
@@ -28,6 +32,7 @@ for(var i = 0; i < keys.length; i++) {
 		if(btnVal == 'Clear all') {
 			input.innerHTML = '0';
             otherInput.innerHTML = '0';
+            document.querySelector('#title').innerHTML = "Chicago";
             for(var j = 0; j < keys.length; j++) {
              
                  keys[j].classList.remove("selected");
@@ -41,14 +46,18 @@ for(var i = 0; i < keys.length; i++) {
             if (!($(this).hasClass('selected'))){
                 var equation = inputVal + "+" + btnVal;
                 input.innerHTML = eval(equation);
-
+                
                 if (team == "left")
                 {
+                    if (parseInt(input.innerHTML) > 60)
+                        document.querySelector('#title').innerHTML = "Player 1 wins!";
                     this.classList.add("selected");
                     this.classList.add("selected-left");
                 }
                 else
                 {
+                    if (parseInt(input.innerHTML) > 60)
+                        document.querySelector('#title').innerHTML = "Player 2 wins!";
                     this.classList.add("selected");
                     this.classList.add("selected-right");
                 }
