@@ -182,7 +182,17 @@ height: 30%;
 .keys span.ball-fifteen{border-top: maroon solid 6vh;border-bottom: maroon solid 6vh;}
 
 .screen:focus{
- border:blue 4px solid;   
+ outline:none; 
+}
+
+.screen-right:focus:after{
+    content:".";
+    color:rgb(123, 255, 0);
+}
+
+.screen-left:focus:before{
+    content:".";
+    color:rgb(123, 255, 0);
 }
 
 body{
