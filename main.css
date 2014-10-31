@@ -68,7 +68,7 @@ height: 30%;
 	margin: 0 14.5px 11px 0;
 	
 	color: #888;
-	line-height: 90px;
+	line-height: 85px;
 	text-align: center;
 	
 	/* prevent selection of text inside keys */
@@ -165,7 +165,7 @@ height: 30%;
 }
 
 .keys span.stripe{
- line-height:7;   
+ line-height:5;   
 }
 
 .keys span.ball-nine{border-top: yellow solid 6vh;border-bottom: yellow solid 6vh;}
