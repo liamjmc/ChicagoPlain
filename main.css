@@ -112,12 +112,12 @@ height: 30%;
 	color: white;
 }
 
-/* Some hover effects */
+/* Some hover effects 
 .keys span:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
 	color: white;
-}
+}*/
 
 .keys span.eval:hover {
 	background: #abb850;
