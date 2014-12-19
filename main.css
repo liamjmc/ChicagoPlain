@@ -33,6 +33,16 @@ background-size: 100% 100%;
 padding: 10vh;
 }
 
+.screen-right:before {
+content: ".";
+color: red !important;
+}
+
+.screen-left:after {
+content: ".";
+color: blue !important;
+}
+
 /* Top portion */
 .top span.clear {
 	float: left;
