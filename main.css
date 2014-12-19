@@ -150,6 +150,7 @@ height: 30%;
 
 .keys span{
  color:#fff;   
+ border-radius:50%;
 }
 
 .keys span.ball-one{background-color:yellow; color:#000;}
@@ -196,8 +197,10 @@ body{
 }
 
 .selected{
- opacity:0.1;    
-}
+ border: none !important;
+background: transparent !important;
+line-height: 95px !important;
+}   
 
 .selected-left{
     box-shadow: 0 0 10px 10px blue;
