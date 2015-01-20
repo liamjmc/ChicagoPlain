@@ -30,15 +30,17 @@ for(var i = 0; i < keys.length; i++) {
 		var btnVal = this.innerHTML;
 		
 		if(btnVal == 'Clear all') {
-			input.innerHTML = '0';
-            otherInput.innerHTML = '0';
-            document.querySelector('#title').innerHTML = "Chicago";
-            for(var j = 0; j < keys.length; j++) {
-             
-                 keys[j].classList.remove("selected");
-                 keys[j].classList.remove("selected-left");
-                 keys[j].classList.remove("selected-right");
-             
+            var isConfirmed = confirm("Are you sure you wish to clear all? All data will be lost.");
+            if (isConfirmed){
+                input.innerHTML = '0';
+                otherInput.innerHTML = '0';
+                document.querySelector('#title').innerHTML = "Chicago";
+                for(var j = 0; j < keys.length; j++) {
+
+                     keys[j].classList.remove("selected");
+                     keys[j].classList.remove("selected-left");
+                     keys[j].classList.remove("selected-right");
+                }
             }
 		}
 		
@@ -66,19 +68,15 @@ for(var i = 0; i < keys.length; i++) {
                 this.classList.remove("selected");
                 if ($(this).hasClass('selected-left')){
                     this.classList.remove("selected-left");
-                    input = document.querySelector('.screen-left');
-                    otherInput = document.querySelector('.screen-right');
-                    var equation = inputVal + "-" + btnVal;
-                    input.innerHTML = eval(equation);
+                    var equation = document.querySelector('.screen-left').innerHTML + "-" + btnVal;
+                    document.querySelector('.screen-left').innerHTML = eval(equation);
                     if (parseInt(input.innerHTML) < 61)
                         document.querySelector('#title').innerHTML = "Chicago";
                 }
                 else{
                     this.classList.remove("selected-right");
-                    input = document.querySelector('.screen-right');
-                    otherInput = document.querySelector('.screen-left');
-                    var equation = inputVal + "-" + btnVal;
-                    input.innerHTML = eval(equation);
+                    var equation = document.querySelector('.screen-right').innerHTML + "-" + btnVal;
+                    document.querySelector('.screen-right').innerHTML = eval(equation);
                     if (parseInt(input.innerHTML) < 61)
                         document.querySelector('#title').innerHTML = "Chicago";
                 }
